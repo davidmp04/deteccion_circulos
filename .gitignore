@@ -32,12 +32,5 @@ wheels/
 .DS_Store
 Thumbs.db
 
-# Entrada
-Entrada/
-Entrada_sincriogenia/
-Salida/
-Salida_sincriogenia/
-
-# Imágenes originales en la raíz
-*.JPG
-*.jpg
+# Nota: En la rama 'conimagenesdeprueba' todas las imágenes se incluyen
+# En la rama 'master' se excluyen las imágenes por tamaño
