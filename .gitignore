@@ -1,0 +1,43 @@
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Distribuciones
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Entrada
+Entrada/
+Entrada_sincriogenia/
+Salida/
+Salida_sincriogenia/
+
+# Imágenes originales en la raíz
+*.JPG
+*.jpg
