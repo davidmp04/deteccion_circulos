@@ -2,6 +2,18 @@
 
 Un programa Python que detecta círculos en imágenes y analiza si tienen defectos o imperfecciones dentro de ellos. Ideal para control de calidad, inspección visual automatizada o análisis de piezas circulares.
 
+## Ramas disponibles
+
+Este repositorio tiene dos ramas:
+
+- **`master`**: Código limpio sin imágenes de prueba. Úsala si tienes tus propias imágenes.
+- **`conimagenesdeprueba`**: Incluye ejemplos de imágenes de cada carpeta para que puedas probar el programa inmediatamente.
+
+> ℹ️ Si quieres empezar rápido con ejemplos, clona la rama `conimagenesdeprueba`:
+> ```bash
+> git clone -b conimagenesdeprueba https://github.com/davidmp04/deteccion_circulos.git
+> ```
+
 ## ¿Qué hace exactamente?
 
 El programa es bastante directo en lo que hace:
@@ -30,7 +42,25 @@ pip install opencv-python numpy
 
 ## Cómo usar
 
-### Opción 1: Procesar imágenes
+### Con imágenes de ejemplo (esta rama)
+
+¡Buena noticia! Esta rama ya incluye imágenes de ejemplo en cada carpeta, así que puedes empezar directamente:
+
+1. Ejecuta el script principal:
+   ```bash
+   python circulos.py
+   ```
+
+2. El programa procesará todas las imágenes de ejemplo y guardará los resultados en `Capturas_Procesadas/`
+
+3. (Opcional) Si quieres generar un reporte CSV con las métricas:
+   ```bash
+   python generar_csv_mediciones.py
+   ```
+
+### Con tus propias imágenes
+
+Si has clonado desde la rama `master` o quieres usar imágenes propias:
 
 1. Coloca tus imágenes JPG en cualquiera de estas carpetas:
    - Carpeta raíz del proyecto
@@ -44,11 +74,11 @@ pip install opencv-python numpy
    python circulos.py
    ```
 
-3. Las imágenes procesadas (con los círculos y defectos dibujados) se guardarán en `Capturas_Procesadas/`
+3. Los resultados se guardarán en `Capturas_Procesadas/`
 
-### Opción 2: Generar reporte CSV
+### Generar reporte CSV
 
-Después de procesar las imágenes, puedes generar un reporte en CSV con las métricas:
+Después de procesar las imágenes, puedes generar un reporte:
 
 ```bash
 python generar_csv_mediciones.py
@@ -65,12 +95,16 @@ Esto creará un archivo `Capturas_Procesadas/resultados_perimetros.csv` con:
 .
 ├── circulos.py                      # Script principal de detección
 ├── generar_csv_mediciones.py        # Generador de reportes CSV
-├── Entrada/                         # Carpeta para imágenes de entrada
-├── Entrada_sincriogenia/            # Variante alternativa
-├── Salida/                          # Otra opción de entrada
-├── Salida_sincriogenia/             # Otra opción de entrada
+├── README.md                        # Documentación
+├── LICENSE                          # Licencia MIT
+├── Entrada/                         # Imágenes de ejemplo (rama actual)
+├── Entrada_sincriogenia/            # Más imágenes de ejemplo
+├── Salida/                          # Más imágenes de ejemplo
+├── Salida_sincriogenia/             # Más imágenes de ejemplo
 └── Capturas_Procesadas/             # Salida: aquí se guardan los resultados
 ```
+
+> 📝 Nota: En la rama `master` estas carpetas no incluyen imágenes para mantener el repositorio ligero.
 
 ## Configuración
 
