@@ -32,5 +32,6 @@ wheels/
 .DS_Store
 Thumbs.db
 
-# Nota: En la rama 'conimagenesdeprueba' todas las imágenes se incluyen
-# En la rama 'master' se excluyen las imágenes por tamaño
+# Nota: En esta rama incluimos solo 10 imágenes de ejemplo por cada carpeta
+# El resto de imágenes se ignoran para mantener el tamaño del repositorio
+
