@@ -45,7 +45,7 @@ params = {
 params_hough = {
     'dp': 1.2,
     'param1': 100,
-    'param2': 25,
+    'param2': 20,
     'minRadius_factor': 0.12,
     'maxRadius_factor': 0.50
 }

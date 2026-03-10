@@ -63,7 +63,7 @@ def detect_circles_hybrid(img):
             x, y, r = c
             dist = np.sqrt((x - center_x)**2 + (y - center_y)**2)
 
-            if dist < min(w, h) * 0.45:
+            if dist < min(w, h) * 0.55:
                 valid_circles.append((x, y, r, dist))
 
         if valid_circles:

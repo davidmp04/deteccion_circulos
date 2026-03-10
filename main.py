@@ -30,6 +30,8 @@ def main():
         CURRENT_DIR / 'Entrada_sincriogenia',
         CURRENT_DIR / 'Salida',
         CURRENT_DIR / 'Salida_sincriogenia',
+        CURRENT_DIR / 'TOP',
+        CURRENT_DIR / 'BOTOM',
     ]
 
     seen = set()
